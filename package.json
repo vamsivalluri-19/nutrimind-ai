@@ -1,0 +1,24 @@
+{
+  "name": "nutrimind-ai",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "overrides": {
+    "react-native-safe-area-context": "4.10.5",
+    "@react-native-async-storage/async-storage": "1.23.1"
+  },
+  "scripts": {
+    "client": "npm --prefix client start",
+    "server": "npm --prefix server run dev",
+    "dev": "npm run server"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~3.2.3",
+    "expo-status-bar": "~1.12.1",
+    "react-dom": "18.2.0",
+    "react-native-web": "~0.19.10"
+  }
+}
